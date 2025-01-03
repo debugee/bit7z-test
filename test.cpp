@@ -1,13 +1,15 @@
 #include <iostream>
 #include <bit7z/bitarchivereader.hpp>
+#include <locale>
 
 int main()
 {
+    std::setlocale(LC_ALL, ".UTF-8");
     try
     { // bit7z classes can throw BitException objects
         using namespace bit7z;
 
-        Bit7zLibrary lib{"lib7zip.dylib"};
+        Bit7zLibrary lib{"7zip.dll"};
         BitArchiveReader arc{lib, "test.rar", BitFormat::Auto};
 
         // arc.extractTo(".");
