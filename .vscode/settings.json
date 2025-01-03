@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.qrc": "xml",
+        "typeinfo": "cpp",
+        "string": "cpp"
+    }
+}
